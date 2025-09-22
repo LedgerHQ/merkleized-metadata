@@ -33,7 +33,7 @@ use merkle_tree::MerkleTree;
 pub use merkle_tree::Proof;
 use types::MetadataDigest;
 
-mod extrinsic_decoder;
+pub mod extrinsic_decoder;
 pub mod from_frame_metadata;
 pub mod merkle_tree;
 pub mod types;
