@@ -33,8 +33,8 @@ pub use merkle_tree::Proof;
 use types::MetadataDigest;
 
 mod extrinsic_decoder;
-mod from_frame_metadata;
-mod merkle_tree;
+pub mod from_frame_metadata;
+pub mod merkle_tree;
 pub mod types;
 
 /// Extra information that is required to generate the [`MetadataDigest`].
