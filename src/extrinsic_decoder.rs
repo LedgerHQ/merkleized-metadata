@@ -157,7 +157,7 @@ pub struct CollectAccessedTypes {
 
 impl CollectAccessedTypes {
 	/// Collect all the types that are reachable from `type_ref`.
-	fn collect_all_types(&mut self, type_ref: &TypeRef, type_information: &TypeInformation) {
+	pub fn collect_all_types(&mut self, type_ref: &TypeRef, type_information: &TypeInformation) {
 		if let Some(id) = type_ref.id() {
 			type_information.types.iter().filter(|(k, _)| k.type_id() == id).for_each(
 				|(ty_id, ty)| {
